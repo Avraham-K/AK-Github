@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: black;
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  border-radius: 5px;
+  
+}
+
+footer {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: black;
+  padding: 0.7rem;
+  color: white;
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+  border-radius: 5px;
+  
+}
+
+body {
+  background-image: linear-gradient(to Ttop, rgb(117, 132, 132), white);
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+.card {
+  align-items: center;
+  background-color: lightgray;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px;
+  padding: 50px;
+}
+
+header .nav-item {
+  text-decoration: none;
+  color: white;
+  padding: 0.7rem;
+}
+
+fieldset {
+  border: 1px solid gray; 
+  border-radius: 5px;
+  padding: 0rem 1rem 0rem 1rem;
+
+}
+
+label {
+  display: block;
+  padding: 1rem 0rem 0.5rem 0rem;
+  
+}
+
+input {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid gray; 
+
+  
+  
+}
+
+textarea {
+  height: 10rem;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 1px solid gray; 
+  border-radius: 5px;
+
+}
+
+select {
+  font-size: 1rem;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+button {
+  font-size: 1rem;
+  display: block;
+  float: right;
+  margin: 1rem 0 1rem 0;
+  background-color: rgba(87, 114, 187, 0.89);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 0.5rem 1rem
+}
+
+.page-wrapper {
+  width: 60%;
+  margin: 4rem auto;
+}
+
+.profile-image {
+
+  height: 750px;
+  width: 750px;
+}
+
+.profile-name {
+  font-size: large;
+  color: blue;
+}
+
+.course {
+  font-size: large;
+  color: blue;
+}
