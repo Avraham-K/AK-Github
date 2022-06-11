@@ -1,54 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/style.css" rel="stylesheet" />
-    <title>Contact</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Martel">
+  <link href="./css/style.css" rel="stylesheet" />
 </head>
 
+
 <body>
-    <header>
-        <a href="index.html" class="nav-item">Home</a>
-        <a href="about.html" class="nav-item">About</a>
-        <a href="#" class="nav-item">Contact</a>
+  <navTop>
+    <a href="index.html" class="nav-item">Home</a>
+    <a href="about.html" class="nav-item">About</a>
+    <a href="#" class="nav-item">Contact</a>
+  </navTop>
 
-    </header>
+  <main class="page-wrapper">
+    <div class="form">
+      <form name="theForm" action="https://formspree.io/f/xknykyzk" method="POST">
+        <input type="hidden" name="send_to" value="avraham.kashy@gmail.com" />
+        <fieldset>
+          <label for="first">First Name</label>
+          <input type="text" id="first" class="contactInput" name="first" oninput="onChangeValue(this.value,event)" value=""
+            placeholder="Your name" />
+          <label for="last">Last Name</label>
+          <input type="text" id="last" class="contactInput" oninput="onChangeValue(this.value,event)" name="last" value=""
+            placeholder="Last Name" />
+          <label for="email">Email</label>
+          <input type="email" id="email" class="contactInput" name="email" value="" oninput="onChangeValue(this.value,event)"
+            placeholder="Your email" />
+          <label for="comment">Add your comment:</label>
+          <textarea id="comment" name="comment" value="" oninput="onChangeValue(this.value,event)"
+            placeholder="Your comment"></textarea>
 
-    <div class="page-wrapper">
-        <section>
-            <form action="https://formspree.io/f/xknykyzk" method="POST">
-                <input type="hidden" name="send_to" value="avraham.kashy@gmail.com">
-                <fieldset>
-                    <label for="first">First Name</label> <input type="text" id="first" name="first"
-                        placeholder="Your name">
-                    <label for="last">Last Name</label> <input type="text" id="last" name="last"
-                        placeholder="Last Name">
-                    <label for="email">Email</label> <input type="email" id="email" name="email"
-                        placeholder="Your email">
-                    <label for="comment">Add your comment:</label>
-                    <textarea id="comment" name="comment" placeholder="Your comment"></textarea>
-
-                    <label for="best">Which one is the best hour to contact you?</label>
-                    <select id="best">
-                        <option selected>Select an Option</option>
-                        <option value="morning">Morning 9:00-12:00</option>
-                        <option value="afternoon">Afternoon 12:00-17:00</option>
-                        <option value="evening">Evening 17:00-20:00</option>
-
-                    </select>
-                    <button type="submit">Submit</button>
-                </fieldset>
-            </form>
-        </section>
+          <label for="best">Which one is the best hour to contact you?</label>
+          <select id="best" oninput="onChangeValue(this.value,event)">
+            <option selected>Select an Option</option>
+            <option value="morning">Morning 9:00-12:00</option>
+            <option value="afternoon">Afternoon 12:00-17:00</option>
+            <option value="evening">Evening 17:00-20:00</option>
+          </select>
+          <button id="btnSubmit" disabled="true" type="submit">Submit</button>
+        </fieldset>
+      </form>
     </div>
+  </main>
 
-    <footer>
-        <div> This Website was created with: HTML, CSS and JavaScript.</div>
-    </footer>
+  <footer>
+    <navBot>
+      <a href="index.html" class="nav-item">Home</a>
+      <a href="#" class="nav-item">About</a>
+      <a href="contact.html" class="nav-item">Contact</a>
+    </navBot>
+    <div class="created">This Website was created with: </div>
+    <div id="languagesUsed"></div>
+  </footer>
+  <script src="./js/footer.js"></script>
+  <script src="./js/main.js"></script>
 
 </body>
-
 </html>

@@ -1,35 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./js/main.js"></script>
-    <link href="./css/style.css" rel="stylesheet" />
     <title>About</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Martel">
+    <!-- <script src="./js/main.js"></script> -->
+    <link href="./css/style.css" rel="stylesheet" />
 </head>
 
 <body>
+    <navTop>
 
-    <header>
         <a href="index.html" class="nav-item">Home</a>
         <a href="#" class="nav-item">About</a>
         <a href="contact.html" class="nav-item">Contact</a>
+    </navTop>
 
-    </header>
+    <main class="fullpage">
+        <div class="topRow">
+            <div class="content">
+                <h3>Hi!&#x1F643;</h3>
+                <p>My name is Avraham Kashy and I like the logic behind coding. If you can imagine it, you can code it. During this submission, I got to learn HTML, CSS and JavaScript. </p>
+            </div>
+            <div class="content">
+                <h2>Do you like this site?</h3>
+                    <p>Excellent, it been coded with Vanila JavaScript and the code is open for you to inspect. If you
+                        have any ideas or input, I am always happy to receive feedback. &#128512;</p>
+            </div>
+            <div class="content">
+                <h3>What do I Know?</h3>
+                <p>A little bit of this and that. I am very much a self-learner and am working on improving my skills in
+                    HTML, CSS and Java script before added additional skills.&#128076;</p>
+            </div>
+            <div class="content">
+                <h3>My Background?</h3>
+                <p>Previously semiconductor industry in engineering positions making microchips. 10 years, 5 positions, 1 pandemic and countly experiences I am now heading in a new and different direction.</p>
+            </div>
+        </div>
+        <div class="bottomRow">
+            <div class="cityTitle">
+                <h3 class="visited">Cities I have visited:</h3>
+            </div>
 
-    <section>
+            <div class="google-maps">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54084.91407299871!2d34.72548872648169!3d32.08798399793863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4ca6193b7c1f%3A0xc1fb72a2c0963f90!2sTel%20Aviv-Yafo!5e0!3m2!1sen!2sil!4v1653134323123!5m2!1sen!2sil"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="gallery-img active"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15831282898!2d-74.11976178264347!3d40.697663747321535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sil!4v1653134406961!5m2!1sen!2sil"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="gallery-img"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44773.57163174893!2d9.14271302746898!3d45.462788699545705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c1493f1275e7%3A0x3cffcd13c6740e8d!2sMilan%2C%20Metropolitan%20City%20of%20Milan%2C%20Italy!5e0!3m2!1sen!2sil!4v1653134229694!5m2!1sen!2sil"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="gallery-img"></iframe>
+            </div>
 
-        <div>About Page</div>
-
-    </section>
-
+            <div class="btns">
+                <button disabled="" class="btn prev">Prev</button>
+                <button class="btn next">Next</button>
+            </div>
+        </div>
+    </main>
 
     <footer>
-        <div> This Website was created with: HTML, CSS and JavaScript.</div>
+        <navBot>
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="#" class="nav-item">About</a>
+            <a href="contact.html" class="nav-item">Contact</a>
+        </navBot>
+        <div class="created">This Website was created with: </div>
+        <div id="languagesUsed"></div>
     </footer>
-
+    <script src="./js/footer.js"></script>
+    <script src="./js/maps.js"></script>
 </body>
 
 </html>

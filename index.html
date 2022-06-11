@@ -1,42 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/2df20eaf21.js" crossorigin="anonymous"></script>
   <title>Home</title>
-  <script src="./js/main.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Martel">
   <link href="./css/style.css" rel="stylesheet" />
 </head>
 
 <body>
-  <header>
+  <navTop>
     <a href="#" class="nav-item">Home</a>
     <a href="about.html" class="nav-item">About</a>
     <a href="contact.html" class="nav-item">Contact</a>
-  </header>
+  </navTop>
 
-  <section>
-
-    <div class="card">
-      <img id="profile-image" src="./images/code.png" alt="Israel Tech Challenge" class="profile-image" />
-      <h1 id="profile-name">Avraham Kashy</h1>
-      <h2 id="course">ITC Fullstack Development</h2>
-      <ul>
-        <il><a href="#">Tes1</a></il>
-        <il><a href="#">Test2</a></il>
-        <il><a href="#">Test3</a></il>
-      </ul>
-    </div>
-
-  </section>
-
+  <main>
+    <section>
+      <div class="card">
+        <label class="clicktogif" id="imgUser" title="click to show gif"><input type="checkbox"><img src="./images/gif2_Space.gif" alt="Gif2"></label>
+        <h3 id="profile-name" class="profile-name"></h3>
+        <h4 id="course" class="course-class">Full Stack Development</h4>
+        <ul class="items">
+          <li><a id="icon" class="fa-brands fa-github-alt fa-xl" href="https://github.com/Avraham-K"></a></li>
+          <li><a id="icon" class="fa-brands fa-stack-overflow fa-xl" href="http://stackoverflow.com/u/17605988"></a></li>
+          <li><a id="icon" class="fa-brands fa-linkedin fa-xl" href="https://www.linkedin.com/in/avraham-k-0a319023b"></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <div> This Website was created with: HTML, CSS and JavaScript.</div>
+    <navBot>
+      <a href="index.html" class="nav-item">Home</a>
+      <a href="#" class="nav-item">About</a>
+      <a href="contact.html" class="nav-item">Contact</a>
+    </navBot>
+    <div class="created">This Website was created with: </div>
+    <div id="languagesUsed"></div>
   </footer>
-
+  <script src="./js/footer.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
